@@ -115,8 +115,44 @@ nav li a {
   border-left-color: var(--yellow);
 }
 
+.projects {
+  margin: 2rem 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  border-top: 0.5rem solid;
+  border-left: 0.5rem solid;
+  border-color: var(--blue-glow);
+  border-radius: 2rem;
+}
+
+.projects h2 {
+  display: flex;
+  justify-content: center;
+
+  color: var(--green);
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+#main-project {
+  width: 10%;
+}
+
+.contact {
+  margin-bottom: 2rem;
+
+  border: 0.5rem solid;
+  border-bottom: 0;
+  border-color: var(--blue-glow);
+  border-radius: 2rem;
+}
+
 .contact h2 {
   margin: 1rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 
@@ -126,7 +162,7 @@ nav li a {
 }
 
 .links {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .links > ul {
@@ -151,6 +187,24 @@ nav li a {
   margin-bottom: 5rem;
 }
 
+form {
+  margin: 1rem;
+}
+
+form p {
+  display: flex;
+  justify-content: center;
+}
+
+label,
+name,
+button {
+}
+
+button {
+  margin-top: 1rem;
+}
+
 footer {
   background-color: #e10361;
 }
@@ -162,6 +216,10 @@ footer h3 {
 }
 
 @media (max-width: 500px) {
+  * {
+    width: auto;
+  }
+
   #browser-heading {
     display: none;
   }
