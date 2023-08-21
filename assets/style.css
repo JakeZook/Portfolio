@@ -7,14 +7,37 @@
   --blue: #2dd9fe;
   --blue-glow: #00a3d5;
 
-  --purple: #ff53cd;
-  --purple-glow: #e10361;
+  --pink: #ff53cd;
+  --pink-glow: #e10361;
 
   --green: #00fe9b;
   --green-glow: #02c435;
 
   --yellow: #ffdb4e;
   --yellow-glow: #b48505;
+
+  --purple: #9461fd;
+  --purple-glow: #4003e6;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+
+  border: 0.5rem solid;
+  border-top-color: var(--purple-glow);
+  border-right-color: var(--purple-glow);
+  border-bottom-color: var(--purple);
+  border-left-color: var(--purple);
+  border-radius: 2rem;
+
+  background-color: darkgray;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 body {
@@ -70,7 +93,7 @@ nav li a {
 }
 
 #purple-button {
-  color: var(--purple);
+  color: var(--pink);
 }
 
 .subtext {
@@ -87,9 +110,6 @@ nav li a {
 }
 
 .bio {
-  display: flex;
-  justify-content: space-evenly;
-
   border-top: 0.5rem solid var(--blue-glow);
   border-right: 0.5rem solid var(--blue-glow);
   border-radius: 2rem;
@@ -100,7 +120,7 @@ nav li a {
 #bio-header {
   margin: 1rem;
 
-  color: var(--purple);
+  color: var(--pink);
   text-decoration: underline;
   font-size: 3rem;
 }
@@ -110,8 +130,10 @@ nav li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   color: white;
+  text-align: center;
 }
 
 #bio-image {
@@ -120,20 +142,15 @@ nav li a {
 
   display: block;
   margin: 0 auto;
-
-  border: 0.5rem solid;
-  border-top-color: var(--yellow-glow);
-  border-right-color: var(--yellow-glow);
-  border-bottom-color: var(--yellow);
-  border-left-color: var(--yellow);
 }
 
 .projects {
   margin: 2rem 0;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  text-align: center;
 
   border-top: 0.5rem solid;
   border-left: 0.5rem solid;
@@ -144,10 +161,68 @@ nav li a {
 .projects h2 {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 
   color: var(--green);
   text-decoration: underline;
   font-size: 3rem;
+}
+
+.large-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 20rem;
+  width: auto;
+}
+
+.large-project img {
+  width: 300px;
+  height: auto;
+  opacity: 0.75;
+}
+
+.large-project h3 {
+  font-size: 2rem;
+}
+
+.projects figure aside {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  margin-left: 2rem;
+  justify-content: center;
+  flex-direction: column;
+
+  border: 0.5rem solid;
+  border-top-color: var(--blue-glow);
+  border-right-color: var(--blue-glow);
+  border-left-color: var(--blue);
+  border-bottom-color: var(--blue);
+  border-radius: 2rem;
+}
+
+.side-projects {
+  display: flex;
+  justify-content: center;
+}
+
+.side-projects figure {
+  display: flex;
+  align-items: center;
+}
+
+.large-project > a:hover {
+  color: var(--yellow);
+}
+
+.project2 > a:hover,
+.project3 > a:hover,
+.project4 > a:hover,
+.project5 > a:hover {
+  color: var(--yellow);
 }
 
 .contact {
@@ -168,7 +243,7 @@ nav li a {
 
   font-size: 3rem;
   text-decoration: underline;
-  color: var(--purple);
+  color: var(--pink);
 }
 
 .links {
@@ -203,7 +278,23 @@ form {
 
 form p {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  color: var(--blue);
+}
+
+input[type="text"] {
+  background-color: black;
+  color: var(--yellow);
+
+  border: 0.25rem solid var(--blue-glow);
+  border-radius: 2rem;
+}
+
+input::placeholder {
+  color: var(--yellow);
 }
 
 button {
