@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
   font-family: "Silkscreen", cursive;
+}
 
+:root {
   --blue: #2dd9fe;
   --blue-glow: #00a3d5;
 
@@ -24,8 +26,6 @@ body {
 }
 
 nav {
-  margin-bottom: 5rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,6 +71,19 @@ nav li a {
 
 #purple-button {
   color: var(--purple);
+}
+
+.subtext {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.subtext h2 {
+  padding: 0 2rem;
+  color: var(--yellow);
 }
 
 .bio {
@@ -137,11 +150,8 @@ nav li a {
   font-size: 3rem;
 }
 
-#main-project {
-  width: 10%;
-}
-
 .contact {
+  margin: 0 1rem;
   margin-bottom: 2rem;
 
   border: 0.5rem solid;
@@ -196,11 +206,6 @@ form p {
   justify-content: center;
 }
 
-label,
-name,
-button {
-}
-
 button {
   margin-top: 1rem;
 }
@@ -234,6 +239,11 @@ footer h3 {
     border: 0.5rem solid var(--blue-glow);
     border-top: 0;
     border-radius: 2rem;
+  }
+
+  .subtext {
+    flex-direction: column;
+    align-items: center;
   }
 
   .bio figure {
