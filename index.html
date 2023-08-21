@@ -12,56 +12,66 @@
     />
     <title>Jake Zook Portfolio</title>
   </head>
+
   <body>
     <nav>
-      <h1>Jake Zook</h1>
+      <h1 id="browser-heading">Jake Zook</h1>
         <ul>
-          <li><a href="#">Bio</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Resume</a></li>
+          <li><a id="purple-button" href="#">Bio</a></li>
+          <li><a id="green-button" href="#">Projects</a></li>
+          <li><a id="purple-button" href="#">Contact</a></li>
+          <li><a id="green-button" href="#">Resume</a></li>
         </ul>
-      </div>
     </nav>
 
-    <article>
-        <img src="" alt="">
-        <h2>Bio</h2>
-        <p></p>
-    </article>
+    <header>
+      <h1 id="mobile-heading">Jake Zook</h1>
+    </header>
 
-    <section>
-        <h2>Projects</h2>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </section>
+      <main>
+      <article class="bio">
+        <figure>
+          <img id="bio-image" src="assets/images/profile pic.png" alt="Picture of Jake Zook">
+        </figure>
+          <aside id="bio-text">
+            <h2 id="bio-header">Bio</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus rem, est vitae illo nisi totam quam enim odit officiis.</p>
+          </aside>
+      </article>
 
-    <section>
-        <h2>Contact</h2>
-        <div>
-            <h3>Email</h3>
-            <a href="#"></a>
-        </div>
-        <div>
-            <h3>Discord</h3>
-            <a href="#"></a>
-        </div>
-        <div>
-            <h3>Github</h3>
-            <a href="#"></a>
-        </div>
-        <div>
-            <h3>Resume</h3>
-            <a href="#"></a>
-        </div>
-    </section>
+      <section class="projects">
+          <h2>Projects</h2>
+          <a href="#"><img src="" alt=""></a>
+          <a href="#"><img src="" alt=""></a>
+          <a href="#"><img src="" alt=""></a>
+          <a href="#"><img src="" alt=""></a>
+          <a href="#"><img src="" alt=""></a>
+      </section>
 
-    <footer>
-        <h3>Jake Zook</h2>
-    </footer>
+      <section class="contact">
+          <h2>Contact</h2>
+          <div>
+              <h3>Email</h3>
+              <a href="#"></a>
+          </div>
+          <div>
+              <h3>Discord</h3>
+              <a href="#"></a>
+          </div>
+          <div>
+              <h3>Github</h3>
+              <a href="#"></a>
+          </div>
+          <div>
+              <h3>Resume</h3>
+              <a href="#"></a>
+          </div>
+      </section>
 
+      <footer>
+          <h3>Jake Zook</h2>
+      </footer>
+
+    </main>
   </body>
 </html>
