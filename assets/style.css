@@ -115,6 +115,42 @@ nav li a {
   border-left-color: var(--yellow);
 }
 
+.contact h2 {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+
+  font-size: 3rem;
+  text-decoration: underline;
+  color: var(--purple);
+}
+
+.links {
+  margin-top: 2rem;
+}
+
+.links > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.links ul {
+  padding: 0;
+  text-align: center;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--yellow);
+  margin-bottom: 5rem;
+}
+
 footer {
   background-color: #e10361;
 }
@@ -165,6 +201,10 @@ footer h3 {
 
   nav li a {
     padding: 0.5rem 1rem;
+  }
+
+  .links > ul {
+    display: inline;
   }
 }
 
