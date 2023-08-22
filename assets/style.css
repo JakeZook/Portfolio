@@ -89,13 +89,15 @@ nav li a {
   display: block;
 }
 
-#green-button {
+#green-button,
+#green-text {
   color: var(--green);
 
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
-#purple-button {
+#purple-button,
+#purple-text {
   color: var(--purple);
 
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
