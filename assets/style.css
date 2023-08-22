@@ -7,8 +7,8 @@
   --blue: #2dd9fe;
   --blue-glow: #00a3d5;
 
-  --pink: #ff53cd;
-  --pink-glow: #e10361;
+  --purple: #ff53cd;
+  --purple-glow: #e10361;
 
   --green: #00fe9b;
   --green-glow: #02c435;
@@ -16,8 +16,8 @@
   --yellow: #ffdb4e;
   --yellow-glow: #b48505;
 
-  --purple: #9461fd;
-  --purple-glow: #4003e6;
+  --darkpurple: #9461fd;
+  --darkpurple-glow: #4003e6;
 }
 
 img {
@@ -26,10 +26,10 @@ img {
   object-fit: cover;
 
   border: 0.5rem solid;
-  border-top-color: var(--purple-glow);
-  border-right-color: var(--purple-glow);
-  border-bottom-color: var(--purple);
-  border-left-color: var(--purple);
+  border-top-color: var(--darkpurple-glow);
+  border-right-color: var(--darkpurple-glow);
+  border-bottom-color: var(--darkpurple);
+  border-left-color: var(--darkpurple);
   border-radius: 2rem;
 
   background-color: darkgray;
@@ -60,6 +60,7 @@ nav {
 
 h1 {
   color: var(--blue);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
 #browser-heading {
@@ -90,10 +91,22 @@ nav li a {
 
 #green-button {
   color: var(--green);
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
 #purple-button {
-  color: var(--pink);
+  color: var(--purple);
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+#green-button:hover {
+  color: var(--green-glow);
+}
+
+#purple-button:hover {
+  color: var(--purple-glow);
 }
 
 .subtext {
@@ -106,7 +119,9 @@ nav li a {
 
 .subtext h2 {
   padding: 0 2rem;
+
   color: var(--yellow);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
 .bio {
@@ -120,7 +135,9 @@ nav li a {
 #bio-header {
   margin: 1rem;
 
-  color: var(--pink);
+  color: var(--purple);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
   text-decoration: underline;
   font-size: 3rem;
 }
@@ -164,7 +181,6 @@ nav li a {
   flex-wrap: wrap;
   align-items: center;
 
-  color: var(--green);
   text-decoration: underline;
   font-size: 3rem;
 }
@@ -243,7 +259,7 @@ nav li a {
 
   font-size: 3rem;
   text-decoration: underline;
-  color: var(--pink);
+  color: var(--purple);
 }
 
 .links {
@@ -266,10 +282,16 @@ nav li a {
 }
 
 .links a {
+  margin-bottom: 5rem;
   text-decoration: none;
   font-size: 2rem;
+
   color: var(--yellow);
-  margin-bottom: 5rem;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+.links li :hover {
+  color: var(--yellow-glow);
 }
 
 form {
@@ -299,7 +321,12 @@ input::placeholder {
 
 button {
   margin-top: 1rem;
-  background-color: var(--green);
+  width: 8rem;
+  background-color: var(--yellow);
+}
+
+button:hover {
+  background-color: var(--green-glow);
 }
 
 footer {
@@ -312,59 +339,59 @@ footer h3 {
   justify-content: center;
 }
 
-#browser-heading {
-  display: none;
-}
-
-#mobile-heading {
-  display: flex;
-  justify-content: center;
-  text-align: justify;
-  margin: 2rem 1rem;
-  padding-bottom: 1rem;
-
-  border: 0.5rem solid var(--blue-glow);
-  border-top: 0;
-  border-radius: 2rem;
-}
-
-.subtext {
-  flex-direction: column;
-  align-items: center;
-}
-
-.bio figure {
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  margin-bottom: 2rem;
-  width: 100%;
-  align-items: flex-start;
-}
-
-nav ul {
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav li {
-  text-align: center;
-}
-
-nav li a {
-  padding: 0.5rem 1rem;
-}
-
-.links > ul {
-  display: inline;
-}
-
 @media (max-width: 500px) {
   * {
     width: auto;
+  }
+
+  #browser-heading {
+    display: none;
+  }
+
+  #mobile-heading {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: 2rem 1rem;
+    padding-bottom: 1rem;
+
+    border: 0.5rem solid var(--blue-glow);
+    border-top: 0;
+    border-radius: 2rem;
+  }
+
+  .subtext {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio figure {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    margin-bottom: 2rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    text-align: center;
+  }
+
+  nav li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .links > ul {
+    display: inline;
   }
 }
 
