@@ -55,7 +55,7 @@ body {
 /* Sets navbar on top of page and basic styling */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   background-color: rgb(0, 0, 0);
@@ -71,7 +71,7 @@ h1 {
 
 /* Heading to show when on desktop */
 #browser-heading {
-  font-size: 1, 5rem;
+  font-size: 3rem;
   margin: 0.5rem;
   padding-left: 1rem;
 }
@@ -88,9 +88,11 @@ nav ul {
   display: flex;
 }
 
-/* Removes bullet points */
+/* Removes bullet points and sets font size and padding between items */
 nav li {
+  font-size: 2rem;
   list-style: none;
+  padding: 0 0.5rem;
 }
 
 /* Styles individual links on navbar */
@@ -371,6 +373,7 @@ form p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem 0;
 
   color: var(--blue);
 }
@@ -504,6 +507,17 @@ footer h3 {
   a {
     padding: 0.5rem 0.5rem;
     margin: 1rem 0;
+  }
+}
+
+/* Changes font size on navbar for smaller screen sizes */
+@media (max-width: 650px) {
+  nav li {
+    font-size: 1rem;
+  }
+
+  #browser-heading {
+    font-size: 2rem;
   }
 }
 
