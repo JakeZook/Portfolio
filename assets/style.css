@@ -122,7 +122,7 @@ nav li a {
 }
 
 /* Change color on hover */
-*/ #purple-button:hover {
+#purple-button:hover {
   color: var(--purple-glow);
 }
 
@@ -148,8 +148,6 @@ nav li a {
   border-top: 0.5rem solid var(--blue-glow);
   border-right: 0.5rem solid var(--blue-glow);
   border-radius: 2rem;
-
-  padding-top: 2rem;
 }
 
 /* Font style and color effects for the header in bio section */
@@ -165,6 +163,7 @@ nav li a {
 
 /* Styling for header in bio section */
 #bio-text {
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,6 +172,11 @@ nav li a {
 
   color: white;
   text-align: center;
+}
+
+/* Adds a margin around paragraph in bio */
+#bio-text p {
+  margin: 1rem;
 }
 
 /* styling for profile pic in bio section */
@@ -199,8 +203,14 @@ nav li a {
   border-radius: 2rem;
 }
 
+/* Adds margin around header inside projects section */
+.projects header {
+  margin: 1rem;
+}
+
 /* Styling for heading within projects section */
 .projects h2 {
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -212,6 +222,7 @@ nav li a {
 
 /* Styling for main project section */
 .large-project {
+  margin: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,15 +240,20 @@ nav li a {
 
 /* Sizing for header withing the main project section */
 .large-project h3 {
+  margin: 1rem;
   font-size: 2rem;
+}
+
+/* Adds padding inside paragraphs nested in aside sections */
+aside p {
+  padding: 1rem;
 }
 
 /* Styling and borders for projects descriptions */
 .projects figure aside {
   display: flex;
   align-items: center;
-  padding-left: 1rem;
-  margin-left: 2rem;
+  margin: 0rem 2rem;
   justify-content: center;
   flex-direction: column;
 
@@ -259,6 +275,19 @@ nav li a {
 .side-projects figure {
   display: flex;
   align-items: center;
+}
+
+/* Adds margin around h3 inside side projects section */
+.side-projects h3 {
+  margin: 1rem;
+}
+
+/* Adds margin around each individual side project box */
+.project2,
+.project3,
+.project4,
+.project5 {
+  margin: 1rem;
 }
 
 /* Changes color of links inside projects on hover */
@@ -462,12 +491,10 @@ footer h3 {
   .projects figure aside {
     justify-content: center;
     margin: 0;
-    padding: 0;
   }
 
   .projects header {
     padding: 1rem 0;
-    margin: 2rem 0;
   }
 
   .side-projects figure {
