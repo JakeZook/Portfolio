@@ -299,6 +299,7 @@ input::placeholder {
 
 button {
   margin-top: 1rem;
+  background-color: var(--green);
 }
 
 footer {
@@ -311,59 +312,96 @@ footer h3 {
   justify-content: center;
 }
 
+#browser-heading {
+  display: none;
+}
+
+#mobile-heading {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin: 2rem 1rem;
+  padding-bottom: 1rem;
+
+  border: 0.5rem solid var(--blue-glow);
+  border-top: 0;
+  border-radius: 2rem;
+}
+
+.subtext {
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio figure {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-bottom: 2rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+nav ul {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  text-align: center;
+}
+
+nav li a {
+  padding: 0.5rem 1rem;
+}
+
+.links > ul {
+  display: inline;
+}
+
 @media (max-width: 500px) {
   * {
     width: auto;
   }
+}
 
-  #browser-heading {
-    display: none;
-  }
-
-  #mobile-heading {
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    margin: 2rem 1rem;
-    padding-bottom: 1rem;
-
-    border: 0.5rem solid var(--blue-glow);
-    border-top: 0;
-    border-radius: 2rem;
-  }
-
-  .subtext {
+@media (max-width: 800px) {
+  .side-projects {
     flex-direction: column;
-    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .large-project {
+    flex-direction: column;
   }
 
-  .bio figure {
-    display: flex;
-    align-items: center;
+  .large-project img {
+    width: 100px;
+    height: auto;
   }
 
-  nav {
-    margin-bottom: 2rem;
-    width: 100%;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    width: 100%;
+  .projects figure aside {
     justify-content: center;
-    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
   }
 
-  nav li {
-    text-align: center;
+  .projects header {
+    padding: 1rem 0;
+    margin: 2rem 0;
   }
 
-  nav li a {
-    padding: 0.5rem 1rem;
+  .side-projects figure {
+    flex-direction: row;
   }
 
-  .links > ul {
-    display: inline;
+  a {
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 0;
   }
 }
 
