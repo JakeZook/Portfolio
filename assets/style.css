@@ -3,6 +3,7 @@
   font-family: "Silkscreen", cursive;
 }
 
+/* color palette variables */
 :root {
   --blue: #2dd9fe;
   --blue-glow: #00a3d5;
@@ -20,6 +21,7 @@
   --darkpurple-glow: #4003e6;
 }
 
+/* Styling and border for all default images */
 img {
   width: 100px;
   height: 100px;
@@ -35,11 +37,13 @@ img {
   background-color: darkgray;
 }
 
+/* Removes underline and blue link text color */
 a {
   text-decoration: none;
   color: white;
 }
 
+/* Sets standard body sizing and standard color theme */
 body {
   margin: 0;
   padding: 0;
@@ -48,6 +52,7 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
+/* Sets navbar on top of page and basic styling */
 nav {
   display: flex;
   justify-content: space-between;
@@ -58,37 +63,44 @@ nav {
   border-bottom: 1rem solid var(--blue-glow);
 }
 
+/* Set h1 to a constant style */
 h1 {
   color: var(--blue);
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
+/* Heading to show when on desktop */
 #browser-heading {
   font-size: 1, 5rem;
   margin: 0.5rem;
   padding-left: 1rem;
 }
 
+/* Heading to show when on mobile */
 #mobile-heading {
   display: none;
 }
 
+/* Standard styling for nav bar items */
 nav ul {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
+/* Removes bullet points */
 nav li {
   list-style: none;
 }
 
+/* Styles individual links on navbar */
 nav li a {
   text-decoration: none;
   padding: 1rem;
   display: block;
 }
 
+/* Constant color scheme for green text and buttons */
 #green-button,
 #green-text {
   color: var(--green);
@@ -96,6 +108,7 @@ nav li a {
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
+/* Constant color scheme for purple text and buttons */
 #purple-button,
 #purple-text {
   color: var(--purple);
@@ -103,14 +116,17 @@ nav li a {
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
+/* Change color on hover */
 #green-button:hover {
   color: var(--green-glow);
 }
 
-#purple-button:hover {
+/* Change color on hover */
+*/ #purple-button:hover {
   color: var(--purple-glow);
 }
 
+/* Styling for sub text within header */
 .subtext {
   margin: 2rem 0;
   display: flex;
@@ -119,6 +135,7 @@ nav li a {
   flex-wrap: wrap;
 }
 
+/* Color effects for sub text on heading */
 .subtext h2 {
   padding: 0 2rem;
 
@@ -126,6 +143,7 @@ nav li a {
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
+/* Border style for bio section */
 .bio {
   border-top: 0.5rem solid var(--blue-glow);
   border-right: 0.5rem solid var(--blue-glow);
@@ -134,6 +152,7 @@ nav li a {
   padding-top: 2rem;
 }
 
+/* Font style and color effects for the header in bio section */
 #bio-header {
   margin: 1rem;
 
@@ -144,6 +163,7 @@ nav li a {
   font-size: 3rem;
 }
 
+/* Styling for header in bio section */
 #bio-text {
   display: flex;
   flex-direction: column;
@@ -155,6 +175,7 @@ nav li a {
   text-align: center;
 }
 
+/* styling for profile pic in bio section */
 #bio-image {
   width: 10rem;
   height: auto;
@@ -163,6 +184,7 @@ nav li a {
   margin: 0 auto;
 }
 
+/* Basic styling and border for projects section */
 .projects {
   margin: 2rem 0;
 
@@ -177,6 +199,7 @@ nav li a {
   border-radius: 2rem;
 }
 
+/* Styling for heading within projects section */
 .projects h2 {
   display: flex;
   justify-content: center;
@@ -187,6 +210,7 @@ nav li a {
   font-size: 3rem;
 }
 
+/* Styling for main project section */
 .large-project {
   display: flex;
   justify-content: center;
@@ -196,16 +220,19 @@ nav li a {
   width: auto;
 }
 
+/* Sizing for main project image */
 .large-project img {
   width: 300px;
   height: auto;
   opacity: 0.75;
 }
 
+/* Sizing for header withing the main project section */
 .large-project h3 {
   font-size: 2rem;
 }
 
+/* Styling and borders for projects descriptions */
 .projects figure aside {
   display: flex;
   align-items: center;
@@ -222,20 +249,20 @@ nav li a {
   border-radius: 2rem;
 }
 
+/* Styling for side project section */
 .side-projects {
   display: flex;
   justify-content: center;
 }
 
+/* Styles each side project in a grid */
 .side-projects figure {
   display: flex;
   align-items: center;
 }
 
-.large-project > a:hover {
-  color: var(--yellow);
-}
-
+/* Changes color of links inside projects on hover */
+.large-project > a:hover,
 .project2 > a:hover,
 .project3 > a:hover,
 .project4 > a:hover,
@@ -243,6 +270,7 @@ nav li a {
   color: var(--yellow);
 }
 
+/* Styling and border for contact section */
 .contact {
   margin: 0 1rem;
   margin-bottom: 2rem;
@@ -253,6 +281,7 @@ nav li a {
   border-radius: 2rem;
 }
 
+/* Styling and font sizing for h2 inside contact section */
 .contact h2 {
   margin: 1rem;
   margin-top: 2rem;
@@ -264,25 +293,30 @@ nav li a {
   color: var(--purple);
 }
 
+/* Adds top and bottom margin to contact links */
 .links {
   margin: 2rem 0;
 }
 
+/* Styles contact links */
 .links > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
+/* Resets styling for links list */
 .links ul {
   padding: 0;
   text-align: center;
 }
 
+/* Removes bullet points from links */
 .links li {
   list-style: none;
 }
 
+/* Styling and color scheme for each link */
 .links a {
   margin-bottom: 5rem;
   text-decoration: none;
@@ -292,14 +326,17 @@ nav li a {
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
+/* Changes color of link on hover */
 .links li :hover {
   color: var(--yellow-glow);
 }
 
+/* Adds margin on all sides of the form in contact section */
 form {
   margin: 1rem;
 }
 
+/* Style and color for text inside the form */
 form p {
   display: flex;
   flex-direction: column;
@@ -309,6 +346,7 @@ form p {
   color: var(--blue);
 }
 
+/* Color scheme and border for form */
 input[type="text"] {
   background-color: black;
   color: var(--yellow);
@@ -317,30 +355,36 @@ input[type="text"] {
   border-radius: 2rem;
 }
 
+/* Changes color of placeholder text inside form */
 input::placeholder {
   color: var(--yellow);
 }
 
+/* Styling and color for submit button in form */
 button {
   margin-top: 1rem;
   width: 8rem;
   background-color: var(--yellow);
 }
 
+/* Changes color of button on hover */
 button:hover {
   background-color: var(--green-glow);
 }
 
+/* Changes color of footer section */
 footer {
   background-color: #e10361;
 }
 
+/* Styling for h3 inside footer */
 footer h3 {
   margin: 0;
   display: flex;
   justify-content: center;
 }
 
+/* Adjust styling and position of elements for most mobile screens */
 @media (max-width: 500px) {
   * {
     width: auto;
@@ -397,12 +441,14 @@ footer h3 {
   }
 }
 
+/* Adjust positioning for the side projects on smaller screen size */
 @media (max-width: 800px) {
   .side-projects {
     flex-direction: column;
   }
 }
 
+/* Adjust projects section to fit on smaller screen sizes */
 @media (max-width: 700px) {
   .large-project {
     flex-direction: column;
@@ -434,12 +480,14 @@ footer h3 {
   }
 }
 
+/* Changes font size on navbar for smaller screen sizes */
 @media (max-width: 400px) {
   nav li {
     font-size: 0.75rem;
   }
 }
 
+/* Changes font size on navbar for even smaller screen sizes */
 @media (max-width: 300px) {
   nav li {
     font-size: 0.5rem;
